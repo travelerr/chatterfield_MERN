@@ -7,8 +7,10 @@ router.get('/', function(req, res) {
     res.render('index')
 });
 
+//Insert 
 router.route('/insert').post(function(req, res) {
-    var User = new User();
+    var user = new User();
+    user.id = req.body.id;
     user.name = req.body.name;
     user.email = req.body.email;
     user.description = req.body.description;
@@ -19,5 +21,7 @@ router.route('/insert').post(function(req, res) {
         res.send('User successfully added!')
     })
 })
+
+//Update
 
 module.exports = router; 
