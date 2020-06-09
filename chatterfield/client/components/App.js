@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import Login from './components/Login';
-import Network from './components/Network';
-import Inbox from './components/Inbox';
-import Navbar from './components/Navbar';
-import Register from './components/Register';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Login from './Login';
+import Network from './Network';
+import Inbox from './Inbox';
+import Navbar from './Navbar';
+import Register from './Register';
 
 class App extends React.Component{
     render(){
@@ -23,6 +23,9 @@ class App extends React.Component{
 }
 
 export default App;
+
+//run webpack && nodemon --exec babel-node -- bin/www
+//change to index.ejs
 
 //run webpack && nodemon --exec babel-node -- bin/www
 //change to index.ejs
