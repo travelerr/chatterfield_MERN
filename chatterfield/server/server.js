@@ -13,7 +13,9 @@ app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
 
-mongoose.connect('mongodb+srv://travelerr:1Q2w3e4r@cluster0-ci5rk.mongodb.net/test?retryWrites=true&w=majority')
+const db = require('./config/keys').mongoURI
+
+mongoose.connect(db);
 
 app.use('/', router);
 

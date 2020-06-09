@@ -2,7 +2,6 @@ body, html{
   height: 100%;
   margin: 0;
   background: #91EAE4;
-  padding-top: 30px
 }
 
 .h1{
@@ -10,6 +9,14 @@ body, html{
   text-align: center;
   margin: 30px;
 
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: white;
 }
 
 .navbar-custom{

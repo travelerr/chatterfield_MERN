@@ -24,11 +24,6 @@ class Login extends React.Component{
         const key = e.target.name;
         const value = e.target.value;
 
-        this.setState({ 
-            id: "100",
-            [key]: value 
-        });
-
         console.log(this.state);
     }
     
@@ -60,22 +55,20 @@ class Login extends React.Component{
 
     render(){
         return(
-            <div className="outer-container-join">
-                <h1 className="h1">Welcome to Chatterfield</h1>
-                <form className="justify-content-center">
-                    <div className="form-group">
-                        <input className="form-control" placeholder="Name" type="text" size="50" name="name" onChange={this.handleChange} />
-                    </div>
-                    <div className="form-group">
-                        <input className="form-control" placeholder="Email" type="email" name="email" onChange={this.handleChange} />
-                    </div>
-                    <div className="form-group">
-                        <textarea className="form-control" placeholder="Short Bio" rows="3" name="description" onChange={this.handleChange} />
-                    </div>
-                    <div className="form-group">
-                        <button className="btn btn-primary" type="button" onClick={this.handleSubmit}>Submit Info</button>    
-                    </div>
-                </form>
+            <div className="user">
+            <header className="user__header">
+                <h3 className="logo">Chatterfield</h3>
+                <h1 className="user__title">A lightweight and simple chat application</h1>
+            </header>
+            <form className="form">
+                <div className="form__group">
+                    <input type="text" placeholder="Username" className="form__input" onChange={this.handleChange}/>
+                </div>
+                <div className="form__group">
+                    <input type="password" placeholder="Password" className="form__input" onChange={this.handleChange}/>
+                </div>
+                <button className="btn" type="button" onClick={this.handleSubmit}>Login</button>
+            </form>
             </div>
         )
     }
