@@ -23,5 +23,7 @@ router.route('/insert').post(function(req, res) {
 })
 
 //Update
-
+router.route('/update').post(function(req, res) {
+    
+})
 module.exports = router; 
