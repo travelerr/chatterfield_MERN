@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { dummyUsers } from './Users.js';
+import { dummyUsers } from './DummyUsers.js';
 import Talk from 'talkjs';
 
 class Network extends React.Component{
