@@ -43,9 +43,7 @@ class Register extends React.Component {
             });
             console.log(this.state.messageFromServer)
         });
-        
-        //localStorage.setItem("currentStoredUser", JSON.stringify(this.state));
-        //this.props.history.push("/network");
+
 
     }
 
