@@ -17,4 +17,8 @@ router.get('/network', function(req, res) {
     res.render('index')
 });
 
+router.get('/register', function(req, res) {
+    res.render('index')
+});
+
 module.exports = router;

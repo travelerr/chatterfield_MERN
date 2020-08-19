@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 var querystring = require('querystring');
 
+// Testing 
 class Register extends React.Component {
     constructor(props){
         super(props);
@@ -28,7 +29,7 @@ class Register extends React.Component {
     }
 
     handleSubmit() {
-        axios.post('/insert',
+        axios.post('/api/users/register',
         querystring.stringify({
             username: this.state.username,
             email: this.state.email,
